@@ -1,0 +1,485 @@
+
+.dot{
+  animation: showHideDot 2.5s ease-in-out infinite;  
+  margin-left: 6px;
+
+}
+.dot .one{
+  animation-delay: 0.2s;
+}
+.dot .two{
+  animation-delay: 0.2s;
+}
+.dot .three{
+  animation-delay: 0.2s;
+}
+@keyframes showHideDot {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  60% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.text-shadow{
+  text-shadow: 5px 5px black;
+
+}
+.skills{
+  margin: 60px auto;
+  color: #fff;
+  height: 82vh;
+  list-style: none;
+}
+.skills li{
+  margin: 20px 0;
+}
+.bar{
+  background: #353b48;
+  display: block;
+  height: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{
+  background: #2187e7b3;
+  height: 5px;
+  float: left;
+}
+.html{
+  width: 90%;
+  animation: html 2s;
+}
+
+@keyframes html{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%s;
+  }
+}
+.javascript{
+  width: 80%;
+  animation: javascript 2s;
+}
+
+@keyframes javascript{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+.angular{
+  width: 70%;
+  animation: angular 2s;
+}
+
+@keyframes angular{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+.ionic{
+  width: 80%;
+  animation: ionic 2s;
+}
+
+@keyframes ionic{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+.react{
+  width: 60%;
+  animation: react 2s;
+}
+
+@keyframes react{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+.react-native{
+  width: 68%;
+  animation: react-native 2s;
+}
+
+@keyframes react-native{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 68%;
+  }
+}
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 0.5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu-branding, .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background: #19191a;
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    background: #252627;
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-branding .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("../img/portrait.jpg");
+      border-radius: 50%;
+      border: solid 3px #94bbe9; 
+      background-size: 107%;
+    }
+  .menu .nav-item {
+    transform: translate3d(600px, 0, 0);
+    transition: all 0.5s ease-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+    .menu .nav-item.current > a {
+      color: #94bbe9; }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease-out; }
+    .menu .nav-link:hover {
+      color: #94bbe9; }
+
+.nav-item:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.nav-item:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.nav-item:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.nav-item:nth-child(4) {
+  transition-delay: 0.4s; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #252627;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(37, 38, 39, 0.6); }
+      body#contact-img {
+        background: url(../img/contact-bg.jpg);
+        background-attachment: fixed;
+        background-size: cover; }
+        body#contact-img:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          background: rgba(37, 38, 39, 0.6); }
+          body#work-img {
+            background: url(../img/work-bg.jpg);
+            background-attachment: fixed;
+            background-size: cover; }
+            body#work-img:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 100%;
+              height: 100%;
+              z-index: -1;
+              background: rgba(37, 38, 39, 0.6); }
+              body#skills-img {
+                background: url(../img/skills-bg.jpg);
+                background-attachment: fixed;
+                background-size: cover; }
+                body#skills-img:after {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 100%;
+                  height: 100%;
+                  z-index: -1;
+                  background: rgba(37, 38, 39, 0.6); }
+                  body#about-img {
+                    background: url(../img/about-bg.jpg);
+                    background-attachment: fixed;
+                    background-size: cover; }
+                    body#about-img:after {
+                      content: '';
+                      position: absolute;
+                      top: 0;
+                      right: 0;
+                      width: 100%;
+                      height: 100%;
+                      z-index: -1;
+                      background: rgba(37, 38, 39, 0.6); }
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 6rem;
+  text-shadow: 5px 5px black; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(42, 43, 44, 0.5); }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.text-secondary {
+  color: #94bbe9; 
+  display: inline-block;
+  letter-spacing: -25px;
+}
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px); }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem;
+      transition: all 0.5s ease-out; }
+      main .icons a:hover {
+        color: #94bbe9; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 13vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #94bbe9 3px solid;
+    height: 200px; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #313334;
+    padding: 0.5rem;
+    border-bottom: #94bbe9 5px solid; }
+
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; 
+    height: 230px;
+  }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #94bbe9;
+      transition: all 0.5s ease-out; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 12rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #94bbe9;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #94bbe9;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #a3a6a8;
+  color: #333; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0c0d0d;
+  color: #fff;
+  height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/portrait.jpg");
+      width: 150px;
+      height: 150px;
+      background-size: 100%; 
+    background-size: 107%;
+  }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 500px) {
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 2rem;
+      font-size: 4rem; }
+  .projects {
+    grid-template-columns: 1fr; } 
+  .boxes{
+    margin-top: 5rem;
+  }
+  .boxes div{
+    font-size: 1em;
+  }
+  }
